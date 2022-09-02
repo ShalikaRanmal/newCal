@@ -1,9 +1,10 @@
 package com.calculateArea;
 
-public class square {
-    public square(int x, int y){
+public class square extends Calculator {
+    public square(int x,int y){
         height = x;
         width = y;
+
     }
 
     public int getHeight() {
@@ -26,7 +27,7 @@ public class square {
     }
 
     private int height, width;
-
+    @Override
     public int calculateArea(){
         return height*width ;
     }

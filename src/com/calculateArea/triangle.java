@@ -1,11 +1,10 @@
 package com.calculateArea;
 
-public class triangle {
-    public triangle(int x, int y){
+public class triangle extends Calculator{
+    public triangle (int x, int y) {
         height = x;
         base = y;
     }
-
     public int getHeight() {
 
         return height;
@@ -27,9 +26,8 @@ public class triangle {
     }
 
     private int height, base;
-
+    @Override
     public int calculateArea(){
-
         return (height*base)/2 ;
     }
 }

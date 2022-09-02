@@ -1,9 +1,7 @@
 package com.calculateArea;
-
-public class circle {
-    public circle(int x){
-
-        radius= x;
+public class circle extends Calculator {
+    public circle (int x){
+        radius = x;
     }
 
     public int getRadios() {
@@ -18,8 +16,18 @@ public class circle {
 
     private int radius;
 
-    public double calculateArea(){
+    public int getDiameter() {
+        return diameter;
+    }
 
-        return Math.PI*radius*radius ;
+    public void setDiameter(int diameter) {
+        this.diameter = diameter;
+    }
+
+    private int diameter;
+
+    @Override
+    public int calculateArea(){
+        return (int) Math.PI*radius*radius ;
     }
 }
